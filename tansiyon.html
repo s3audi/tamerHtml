@@ -48,12 +48,18 @@
 
       /* Style the tab content */
       .tabcontent {
+        margin: 0px 0px 0px 0px;
         float: left;
         padding: 0px 12px;
         border: 1px solid #ccc;
         width: 75%;
         border-left: none;
         height: 100%;
+      }
+
+      .tabcontent iframe{
+        margin: -50px 0px 0px 0px;
+        overflow: hidden;
       }
       /* Style the YANYANA DIVLER */
       #dis_bolme {
@@ -164,7 +170,7 @@
       ></iframe>
     </div>
 
-    <div id="Hamburg" class="tabcontent">
+    <div id="Hamburg" class="tabcontent" style="height: 800px">
       <iframe
         class="airtable-embed"
         frameborder="0"
