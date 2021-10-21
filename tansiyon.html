@@ -48,23 +48,56 @@
 
       /* Style the tab content */
       .tabcontent {
-        float: right;
+        float: left;
         padding: 0px 12px;
         border: 1px solid #ccc;
-        width: 80%;
+        width: 75%;
         border-left: none;
         height: 100%;
+      }
+      /* Style the YANYANA DIVLER */
+      #dis_bolme {
+        width: 800px;
+
+        height: 120px;
+
+        background-color: black;
+      }
+
+      .ic_bolme {
+        float: left;
+
+        width: 350px;
+
+        height: 100px;
+
+        border: #ccc solid 0px;
+
+        background-color: #f00;
+
+        margin-right: 10px;
+
+        margin-left: 20px;
       }
     </style>
   </head>
   <body>
-    <a href="https://www.tansiyon.com.tr"
-      ><img
-        src="https://www.tansiyon.com.tr/wp-content/uploads/2019/07/logo23.png"
-        alt="Tansiyon Mobil Sağlık"
-    /></a>
-    <h2>Tansiyon Mobil Sağlık</h2>
-    <p>Sağlıklı günler dileriz.</p>
+    <div id="dis_bolme">
+      <div class="ic_bolme">
+        <a href="https://www.tansiyon.com.tr"
+          ><img
+            src="https://www.tansiyon.com.tr/wp-content/uploads/2019/07/logo23.png"
+            alt="Tansiyon Mobil Sağlık"
+        /></a>
+      </div>
+
+      <div class="ic_bolme">
+        <h2>Tansiyon Mobil Sağlık</h2>
+        <p>Sağlıklı günler dileriz.</p>
+      </div>
+
+      <!-- <div class="ic_bolme">Bölme3</div> -->
+    </div>
 
     <div class="tab">
       <button
@@ -72,13 +105,13 @@
         onclick="openCity(event, 'London')"
         id="defaultOpen"
       >
-      🍒Firma Kayıt
+        🍒Firma Kayıt
       </button>
       <button class="tablinks" onclick="openCity(event, 'Tokyo')">
-      🍒Firma Liste
+        🍒Firma Liste
       </button>
       <button class="tablinks" onclick="openCity(event, 'Paris')">
-      🥝Rapor Kayıt
+        🥝Rapor Kayıt
       </button>
       <!--
       <button class="tablinks" onclick="openCity(event, 'Hamburg')">
@@ -87,11 +120,11 @@
     -->
 
       <button class="tablinks" onclick="openCity(event, 'Istanbul')">
-      🥝Rapor Liste
+        🥝Rapor Liste
       </button>
 
       <button class="tablinks" onclick="openCity(event, 'Ankara')">
-      💦Şifre Link
+        💦Şifre Link
       </button>
       <!--
       <button class="tablinks" onclick="openCity(event, 'Antalya')">
@@ -127,7 +160,7 @@
       <iframe
         class="airtable-embed"
         frameborder="0"
-        height="900px"
+        height="1100px"
         onmousewheel=""
         src="https://airtable.com/embed/shrTAP7rq2IlxI5bT?backgroundColor=yellow"
         style="background: transparent; border: 1px solid #ccc"
