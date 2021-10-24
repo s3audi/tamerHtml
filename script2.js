@@ -1,7 +1,7 @@
 var html = document.querySelector('#html');
 var pdf = document.querySelector('#pdf');
 
-populateIframe(html, 'other.html', [['x-api-version', 'v1.2']]);
+populateIframe(html, websitem, [['x-api-version', 'v1.2']]);
 populateIframe(pdf, 'peepcode-git.pdf', [['Authorization', 'Bearer abcd1234']]);
 
 function populateIframe(iframe, url, headers) {
