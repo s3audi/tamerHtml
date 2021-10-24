@@ -10,9 +10,41 @@
     <title>Document</title>
   </head>
   <body>
+    <button onclick="domYaz">HTML kod yaz</button>
+
     <script>
       //alert('Tamer');
-      console.log('Bu da konsolgaga');
+      //console.log('Bu da konsol gaga');
+      var san = 20;
+      var san2 = 30;
+      var a = 'Java ';
+      var b = 'Programa ';
+      var c = 'Giriş Eğitimaaaai';
+      var dizi = ['araba', 'teker', 'kapı', 'gaz pedalı', 'Mercedes'];
+      //dizi[4] = 'Dorduncu';
+      dizi.push('İtekle', 'itekleee');
+      dizi.push('İteklesene oğlum');
+      dizi[8] = 'kOOp';
+      //Döngüler
+      for (var i = 0; i < 10; i++) {
+        console.log('i değeri:' + i);
+      }
+
+      //alert('Toplam:' + (san + san2));
+      //alert('Toplam:' + san + san2);
+      //alert(a + b + c);
+      console.log(a + b + c);
+      console.log(dizi); //23.satır domino Hepsini yaz
+      console.log(dizi[7]); //24.satır domino  (Eleman Yazdır)
+      console.log(dizi.length);
+    </script>
+
+    <script>
+      function domYaz() {
+        document.open();
+        document.write('<h1>Hello World</h1>');
+        document.close();
+      }
     </script>
   </body>
 </html>
