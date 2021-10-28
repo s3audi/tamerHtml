@@ -26,7 +26,7 @@
   background: #ccc;
 }
 .menu li.dropdown > a::after {
-  content: '\e259';
+  content: '\e252';
   font-family: 'Glyphicons Halflings';
   font-style: normal;
   font-weight: 400;
@@ -41,7 +41,7 @@
   margin-right: 8px;
 }
 .menu li a:hover {
-  background: grey;
+  background: rgb(175, 127, 105);
 }
 
 .menu .submenu {
@@ -62,7 +62,7 @@
 }
 .submenu li a {
   display: block;
-  background: #999;
+  background: rgb(101, 167, 107);
   color: #fff;
   padding: 8px 6px;
   margin-bottom: 1px;
