@@ -6,6 +6,7 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js"
     ></script>
   </head>
+
   <body>
     <!-- Açıklama -->
     <div id="app">
@@ -13,9 +14,15 @@
       <p>{{ message }}</p>
     </div>
 
+    <!-- Div içindeki mesajı değiştirir Açıklama -->
+    <div id="div">
+      <p><input v-model="message" /></p>
+      <p>{{ message }}</p>
+    </div>
+
     <script>
       myObject = new Vue({
-        el: '#app',
+        el: '#div',
         data: { message: 'Bismillah.js!' },
       });
     </script>
