@@ -1,0 +1,1 @@
+alert('Birşeyler değiştirdin');
