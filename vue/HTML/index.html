@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Rendering v-html TURQ</title>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div id="example1" class="demo">
+      <p>Using mustaches: {{ rawHtml }}</p>
+      <p>Using v-html directive: <span v-html="rawHtml"></span></p>
+    </div>
+    <!-- partial -->
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
