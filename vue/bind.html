@@ -1,17 +1,39 @@
-<!DOCTYPE html>
 <html>
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <body>
     <h2>Vue.js</h2>
+  </body>
+</html>
 
-    <div id="app">
+<html>
+  <head>
+    <title>VueJs Introduction</title>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Açıklama -->
+    <div id="intro" style="text-align: center">
+      <h1>{{ message }}</h1>
+    </div>
+    <script type="text/javascript">
+      var vue_det = new Vue({
+        el: '#intro',
+        data: {
+          message: 'My first VueJS Task',
+        },
+      });
+    </script>
+    <!-- Açıklama -->
+    <div id="app2">
       <p>{{ message }}</p>
       <p><input v-model="message" /></p>
     </div>
-
     <script>
       myObject = new Vue({
-        el: '#app',
+        el: '#app2',
         data: { message: 'Hello Vue.js!' },
       });
     </script>
