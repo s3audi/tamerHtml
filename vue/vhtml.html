@@ -1,6 +1,11 @@
 <html>
   <head>
     <title>VueJs Introduction</title>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons"
       rel="stylesheet"
@@ -14,28 +19,23 @@
     <script src="https://cdn.jsdelivr.net/npm/vuetify@1.1.14/dist/vuetify.min.js"></script>
   </head>
 
-  <body>
-    <v-app id="app">
-      <v-text-field :label="mylabel" :suffix="mysuffix">
-        <template slot="prepend"
-          ><i>Label: <sub>{{mylabel}}</sub></i></template
-        >
-        <template slot="append"
-          ><i>Suffix: <sub>{{mylabel}}</sub></i></template
-        >
-      </v-text-field>
-    </v-app>
 
-    <v-alert dense text type="warning">Dikkkkkkaaaaaat</v-alert>
-    
+  <body>
+
+    <div id="div">
+      <p>Using mustaches: {{ rawHtml }}</p>
+      <p>Using v-html directive: <span v-html="rawHtml"></span></p>
+    </div>
+
+    <script src="js/vue.js"></script>
+
     <script>
-      myObject = new Vue({
-        el: '#app',
-        data: {
-          mylabel: 'Test Label',
-          mysuffix: 'Test suffix',
-        },
-      });
-    </script>
+    myObject = new Vue({
+      el: '#div',
+      data: { rawHtml: 'Bismillah.js!' },
+    });
+  </script>
+
+
   </body>
 </html>
